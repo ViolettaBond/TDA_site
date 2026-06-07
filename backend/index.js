@@ -28,4 +28,23 @@ app.get('/api/products', async (req, res) => {
     }
 });
 
+app.get('/api/news', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM news ORDER BY id');
+        res.json(result.rows);
+    } catch (e) {
+        console.error(e);
+        res.status(500).json({ error: 'database error' });
+    }
+});
+
+app.get('/api/categories', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM categories ORDER BY id');
+        res.json(result.rows);
+    } catch (e) {
+        res.status(500).json({ error: 'database error' });
+    }
+});
+
 app.listen(port, () => console.log(`Server running on port ${port}`));

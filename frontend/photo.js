@@ -6,12 +6,15 @@ import Phone from './vite-project/src/assets/phone.svg';
 import Navigation from './vite-project/src/assets/navigation.svg';
 import Ketchup from './vite-project/src/assets/ketchupkubanochka.png';
 import ShopBag from './vite-project/src/assets/shoppingbag.svg';
-import Fasol from './vite-project/src/assets/fasol.svg';
-import Chili from './vite-project/src/assets/chili.svg';
-import Morkov from './vite-project/src/assets/morkov.svg';
-import Peaches from './vite-project/src/assets/peaches.svg';
-import Tomato from './vite-project/src/assets/tomato.svg';
-import Kornish from './vite-project/src/assets/kornishkubanoch.svg';
+import Optprice from './vite-project/src/assets/optprice.svg';
+import Carcity from './vite-project/src/assets/carcity.svg';
+import Almaz from './vite-project/src/assets/almaz.svg';
+import Twitter from './vite-project/src/assets/twitter.svg';
+import Facebook from './vite-project/src/assets/facebook.svg';
+import Vk from './vite-project/src/assets/vk.svg';
+import Insta from './vite-project/src/assets/instagramm.svg';
+import ChevronLeft from './vite-project/src/assets/chevron-left.svg';
+import Veget from './vite-project/src/assets/veget.jpg';
 
 export const Photos = {
     TDAlogo: TDAlogo,
@@ -22,10 +25,13 @@ export const Photos = {
     Navigation: Navigation,
     Ketchup: Ketchup,
     ShopBag: ShopBag,
-    Fasol: Fasol,
-    Chili: Chili,
-    Morkov: Morkov,
-    Peaches: Peaches,
-    Tomato: Tomato,
-    Kornish: Kornish,
+    Optprice: Optprice,
+    Carcity: Carcity,
+    Almaz: Almaz,
+    Twitter: Twitter,
+    Facebook: Facebook,
+    Vk: Vk,
+    Insta: Insta,
+    ChevronLeft: ChevronLeft,
+    Veget: Veget,
 };

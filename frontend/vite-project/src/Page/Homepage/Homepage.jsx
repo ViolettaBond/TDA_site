@@ -11,6 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import CategoriesSlider from '../../Shared/CategoriesSlider/CategoriesSlider';
 import SalesItemSlider from '../../Shared/SalesItemSlider/SalesItemSlider';
+import NewsSlider from '../../Shared/NewsSlider/NewsSlider';
 
 function Homepage() {
     const [products, setProducts] = useState([]);
@@ -127,6 +128,50 @@ function Homepage() {
             </section>
 
             <SalesItemSlider products={products} />
+
+            <section className={styles.aboutCompany}>
+                <div className={styles.container}>
+                    <h2 className={styles.title}>О компании</h2>
+                    <div className={styles.body}>
+                        <p className={styles.description}>
+                            Ясность нашей позиции очевидна: укрепление и развитие внутренней
+                            структуры обеспечивает широкому кругу (специалистов) участие в
+                            формировании модели развития. Экономическая повестка сегодняшнего дня
+                            прекрасно подходит для реализации экономической целесообразности
+                            принимаемых решений. Как принято считать, предприниматели в сети
+                            интернет формируют глобальную экономическую сеть и при этом -
+                            разоблачены!
+                        </p>
+
+                        <div className={styles.advantages}>
+                            <div className={styles.advantage}>
+                                <img className={styles.icon} src={Photos.Optprice} alt="" />
+                                <p>Оптовые цены</p>
+                            </div>
+
+                            <div className={styles.advantage}>
+                                <img className={styles.icon} src={Photos.Carcity} alt="" />
+                                <p>Доставка по городу и краю</p>
+                            </div>
+
+                            <div className={styles.advantage}>
+                                <img className={styles.icon} src={Photos.Almaz} alt="" />
+                                <p>15 лет на рынке</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.newsSlider}>
+                <div className={styles.header}>
+                    <h2 className={styles.title}>Новости</h2>
+                    <p className={styles.link}>Смотреть все</p>
+                </div>
+                <div className={styles.slider}>
+                    <NewsSlider products={products} />
+                </div>
+            </section>
         </>
     );
 }
